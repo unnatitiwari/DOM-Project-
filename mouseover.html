@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mouseover</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: purple;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        color: aliceblue;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="mouseover">please mouseover from screen</p>
+
+    <script>
+      // catch id mouseover
+      let mouseover = document.getElementById("mouseover");
+      //apply eventlistner
+      mouseover.addEventListener("mouseover", hello);
+
+      function hello() {
+        alert("eventlistener Mouseover is working");
+      }
+    </script>
+  </body>
+</html>
